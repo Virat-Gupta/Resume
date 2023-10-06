@@ -18,6 +18,14 @@ body {
 
 /* Horizontal Lists */
 
+#nav-menu-bars{
+    display: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 5%;
+}
+
 .horizontal-list {
     list-style: none;
     padding-left: 0px;
@@ -514,7 +522,7 @@ button:focus {
     }
 
     .work-block::after {
-        left: -11.35% !important;
+        left: -11.60% !important;
     }
 
     #contact-container {
@@ -534,8 +542,16 @@ button:focus {
 
     #my-details-container {
         width: 100%;
-        margin: 3%;
+        margin: 4%;
     }
 }
 
-@media screen and (max-width: 572px) {}
+@media screen and (max-width: 572px) {
+    #nav-menu-bars{
+        display: unset;
+    }
+
+    .vertical-mobile li{
+        display: block;
+    }
+}
